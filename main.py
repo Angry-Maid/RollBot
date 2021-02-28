@@ -64,7 +64,7 @@ async def inline_echo(inline_query: InlineQuery):
     ) = (
         inline_query.id,
         inline_query.from_user.id,
-        inline_query.query or 'd20'
+        inline_query.query or '1d20'
     )
 
     answer = wrong_query
